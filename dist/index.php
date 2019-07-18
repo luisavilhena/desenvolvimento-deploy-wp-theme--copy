@@ -21,9 +21,9 @@ get_header(); ?>
       'background-color' => 'magenta',
     ), function () {
       ?>
-      <div class="dd-container">
+      <div class="dd-container" style="background-color: black">
         <div class="dd-header-page">
-          <h1 style="background-color: green;">
+          <h1>
             <span>Hell</span>o, lorem!
           </h1>
         </div>
