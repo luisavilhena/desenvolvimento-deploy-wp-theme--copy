@@ -1,0 +1,25 @@
+.dd-breadcrumb {
+  display: flex;
+  align-items: center;
+
+  > .dd-breadcrumb__step {
+    display: block;
+    text-decoration: none;
+  }
+
+  > a.dd-breadcrumb__step {
+    &:hover:link {
+      text-decoration: underline;
+    }
+  }
+
+  > .ap-breadcrumb__separator {
+    display: block;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    > svg {
+      height: 1em;
+    }
+  }
+}

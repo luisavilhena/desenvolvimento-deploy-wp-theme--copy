@@ -1,0 +1,25 @@
+.wp-block-dd-row {
+  padding-top: 30px;
+}
+
+.wp-block-dd-row > .editor-inner-blocks > .editor-block-list__layout {
+  display: flex;
+}
+
+.wp-block-dd-row >
+.editor-inner-blocks >
+.editor-block-list__layout >
+.editor-block-list__block {
+  flex-basis: 0;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.wp-block-dd-row >
+.editor-inner-blocks >
+.editor-block-list__layout >
+.editor-block-list__block >
+.editor-block-list__block-edit {
+  margin-top: 0;
+  margin-bottom: 0;
+}

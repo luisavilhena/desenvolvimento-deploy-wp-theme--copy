@@ -1,0 +1,44 @@
+@import 'header/main-menu-container.less';
+@import 'header/wp-menu.less';
+
+#main-header {
+  height: @header-height-desktop;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: white;
+
+  .admin-bar & {
+    top: 32px;
+  }
+
+  > div {
+    height: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    > #logo-anchor {
+      width: 180px;
+      flex-shrink: 0;
+      margin-right: 120px;
+    }
+  }
+
+  .mx__media-max-sm({
+  	height: @header-height-mobile;
+  });
+}
+
+#main-header + main,
+.below-header-container {
+  margin-top: @header-height-desktop;
+
+  .mx__media-max-sm({
+    margin-top: @header-height-mobile;
+  });
+}

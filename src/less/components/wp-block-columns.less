@@ -1,0 +1,22 @@
+@import './grid.less';
+
+.wp-block-columns {
+  .mx__grid-apply-gutter(horizontal, {
+    margin-left: -1/2 * @gutter-value;
+    margin-right: -1/2 * @gutter-value;
+  });
+
+  > .wp-block-column {
+    //
+    // Reset wordpress block styles
+    //
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+
+    .mx__grid-apply-gutter(horizontal, {
+      padding-left: @gutter-value / 2;
+      padding-right: @gutter-value / 2;
+    });
+  }
+}

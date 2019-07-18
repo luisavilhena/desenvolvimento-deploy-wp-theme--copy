@@ -1,0 +1,32 @@
+@import '../../../node_modules/@orioro/web-ui-styles/less/util.less';
+
+@import './typography.less';
+@import './website-containers.less';
+
+.page-blocks-container {
+  .mx__util-immediate-sibling-relationships({
+    reference: h2;
+    others: ~'.section-with-bg', ~'.section-transparent';
+
+    reference-after-itself: .mx__spacing-m-top(1);
+    reference-after-other: .mx__spacing-m-top(1);
+    other-after-reference: .mx__spacing-m-top(4);
+  });
+
+  /**
+   * Elements that may be outside page sections
+   */
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6 {
+    .mx__website-containers-apply-website-max-width();
+    .mx__website-containers-apply-website-side-padding();
+  }
+
+  > h2 {
+    .mx__typography-heading(2);
+  }
+}

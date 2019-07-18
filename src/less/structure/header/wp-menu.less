@@ -1,0 +1,173 @@
+/**
+ * Isolate styles for wordpress menu
+ */
+
+ul.menu {
+	width: 100%;
+	display: flex;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+
+	justify-content: space-between;
+
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+		display: block;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	ul.sub-menu {
+		list-style: none;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-left: 0;
+
+		padding-top: 15px;
+		padding-bottom: 15px;
+		
+		background-color: white;
+		box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+	}
+
+	> li {
+		position: relative;
+		white-space: nowrap;
+		padding-left: 25px;
+		padding-right: 25px;
+
+		> a:hover {
+			text-decoration: underline;
+		}
+
+		/**
+		 * 2nd level
+		 */
+		> ul.sub-menu {
+			display: none;
+
+			position: absolute;
+			top: 100%;
+
+			flex-direction: column;
+
+			li {
+				white-space: nowrap;
+
+				position: relative;
+
+				/**
+				 * 3rd level forwards
+				 */
+				ul.sub-menu {
+					display: none;
+					
+					// display: flex;
+					flex-direction: column;
+
+					position: absolute;
+					left: 100%;
+					top: -15px;
+				}
+
+				&:hover {
+					ul.sub-menu {
+						display: flex;
+					}
+				}
+
+				&.menu-item-has-children {
+					&::before {
+						content: '';
+						width: 0;
+			      height: 0;
+			      border-top: 6px solid transparent;
+			      border-left: 6px solid black;
+			      border-bottom: 6px solid transparent;
+
+			      position: absolute;
+			      right: 10px;
+			      top: 50%;
+			      transform: translateY(-50%);
+					}
+				}
+			}
+		}
+
+		&:hover {
+			> ul.sub-menu {
+				display: flex;
+			}
+		}
+
+		&:last-child {
+			padding-right: 0;
+
+			> a {
+				padding-right: 0;
+			}
+		}
+	}
+
+	.mx__media-max-sm({
+		flex-direction: column;
+
+		> li {
+			padding-left: 0;
+			padding-right: 0;
+
+			a {
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 10px;
+				margin-bottom: 10px;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			> ul.sub-menu {
+				display: flex;
+				flex-direction: column;
+				position: static;
+
+				padding-left: 30px;
+
+				padding-top: 0;
+				padding-bottom: 0;
+				background-color: transparent;
+				box-shadow: none;
+
+				li {
+					background-color: inherit;
+					font-size: .9em;
+
+					/**
+					 * 3rd level forwards: on mobile hide those menus
+					 */
+					ul.sub-menu {
+						display: none;
+					}
+
+					&:hover {
+						background-color: inherit;
+						
+						ul.sub-menu {
+							display: none;
+						}
+					}
+
+					&.menu-item-has-children {
+						&::before {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	});
+}
