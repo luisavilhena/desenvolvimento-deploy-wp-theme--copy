@@ -26,6 +26,9 @@ get_header(); ?>
           <h1>
             <span>Hell</span>o, lorem!
           </h1>
+          <h2 style="background-color: chocolate">
+            Ispum
+          </h2>
         </div>
         <img  class="dd-image"src="<?php echo get_template_directory_uri(); ?>/resources/img/fish.jpg">
       </div>
