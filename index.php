@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-<main class="below-header-container">
+<main class="below-header-container" style="background-color: black">
   <?php while (have_posts()) : the_post(); ?>
     <?php
     dd_component__page_section(array(
