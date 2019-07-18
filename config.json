@@ -1,0 +1,30 @@
+{
+  "themeName": "desenvolvimentoDeployWpTheme",
+  "themeId": "dd",
+  "themeColors": [
+    {
+      "id": "skyblue",
+      "label": "Skyblue",
+      "code": "skyblue",
+      "contrastingColorId": "black"
+    },
+    {
+      "id": "darkred",
+      "label": "Darkred",
+      "code": "darkred",
+      "contrastingColorId": "white"
+    },
+    {
+      "id": "black",
+      "label": "Black",
+      "code": "#000000",
+      "contrastingColorId": "white"
+    },
+    {
+      "id": "white",
+      "label": "White",
+      "code": "#FFFFFF",
+      "contrastingColorId": "black"
+    }
+  ]
+}
