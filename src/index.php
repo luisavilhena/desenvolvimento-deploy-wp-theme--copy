@@ -23,7 +23,7 @@ get_header(); ?>
       ?>
       <div class="dd-container">
         <div class="dd-header-page">
-          <h1 style="background-color: red;">
+          <h1 style="background-color: green;">
             <span>Hell</span>o, lorem!
           </h1>
         </div>
