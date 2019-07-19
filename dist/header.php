@@ -34,7 +34,7 @@
 	      <span></span>
 	    </button>
 
-	    <nav id="main-menu-container" style="background-color: blueviolet">
+	    <nav id="main-menu-container" style="background-color: black">
 	      <?php
 	        wp_nav_menu(array(
 	          'theme_location' => 'main-menu',
