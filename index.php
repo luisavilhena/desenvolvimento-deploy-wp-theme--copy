@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-<main class="below-header-container" style="background-color: darkorange">
+<main class="below-header-container" style="background-color: black">
   <?php while (have_posts()) : the_post(); ?>
     <?php
     dd_component__page_section(array(
@@ -26,7 +26,7 @@ get_header(); ?>
           <h1>
             <span>Hell</span>o, lorem!
           </h1>
-          <h2 style="background-color: white">
+          <h2 style="background-color: chocolate">
             Ispum
           </h2>
         </div>
