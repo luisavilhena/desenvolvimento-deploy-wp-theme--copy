@@ -29,6 +29,9 @@ get_header(); ?>
           <h2 style="background-color: chocolate">
             Ispum
           </h2>
+          <h2>
+            Hello, hello, hello
+          </h2>
         </div>
         <img  class="dd-image"src="<?php echo get_template_directory_uri(); ?>/resources/img/fish.jpg">
       </div>
