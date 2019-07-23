@@ -29,7 +29,7 @@ get_header(); ?>
           <h2 style="background-color: chocolate">
             Ispum
           </h2>
-          <h2>
+          <h2 style="background-color: white">
             Hello, hello, hello
           </h2>
         </div>
