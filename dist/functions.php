@@ -90,6 +90,11 @@ function dd__setup() {
 	 */
 	require_once('inc/translation-system.php');
 
+  /**
+   * Post-types
+   */
+  require_once('inc/post-types/load.php');
+
 	/**
 	 * Setup carbon fields
 	 */
