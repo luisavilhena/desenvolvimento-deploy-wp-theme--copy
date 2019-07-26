@@ -14,30 +14,20 @@
 
 get_header(); ?>
 
-<main class="below-header-container" style="background-color: black">
+<main class="below-header-container bg-grey">
   <?php while (have_posts()) : the_post(); ?>
     <?php
     dd_component__page_section(array(
       'background-color' => 'magenta',
     ), function () {
       ?>
-      <div class="dd-container" style="background-color: black">
-        <div class="dd-header-page">
-          <h1>
-            <span>Hell</span>o, lorem!
-          </h1>
-          <h2 style="background-color: chocolate">
-            Ispum
-          </h2>
-          <h2 style="background-color: white">
-            Hello, hello, hello
-          </h2>
-        </div>
-        <img  class="dd-image"src="<?php echo get_template_directory_uri(); ?>/resources/img/fish.jpg">
+      <div class="dd-container">
+        <img  class="dd-image"src="<?php echo get_template_directory_uri(); ?>/resources/img/beetle.jpg">
       </div>
       <?php
     })
     ?>
+    <button>teste</button>
   <?php endwhile; ?>
 </main>
 

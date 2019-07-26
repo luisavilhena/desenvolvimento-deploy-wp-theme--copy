@@ -39,12 +39,21 @@ function dd__enqueue_scripts_and_styles() {
 		'1.0.0'
 	);
 
+  wp_register_script(
+    'dd--animation',
+    get_template_directory_uri() . '/js/animation/index.bundle.js',
+    array('jquery'),
+    '1.0.0'
+  );
+
 	/**
 	 * Enqueue styles and scripts
 	 */
 	wp_enqueue_style('dd--main-style');
 
 	wp_enqueue_script('dd--header');
+
+  wp_enqueue_script('dd--animation');
 
 	if (is_page_template('page-templates/home.php')) {
 		wp_enqueue_script('dd--page-template-home');
