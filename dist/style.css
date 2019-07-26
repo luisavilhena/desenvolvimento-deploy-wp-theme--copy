@@ -345,194 +345,47 @@ a {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
-.bg-darkred {
+.bg-grey {
   color: white;
-  border-color: darkred;
-  background-color: darkred;
+  border-color: #191919;
+  background-color: #191919;
 }
-.fg-darkred {
-  color: darkred;
-  border-color: darkred;
+.fg-grey {
+  color: #191919;
+  border-color: #191919;
 }
-.border-darkred {
-  border-color: darkred;
+.border-grey {
+  border-color: #191919;
 }
-.hover-bg-darkred:hover {
-  background-color: darkred;
-  border-color: darkred;
-  color: white;
-}
-.hover-fg-darkred:hover {
-  color: darkred;
-  border-color: darkred;
-}
-.bg-navy {
-  color: white;
-  border-color: navy;
-  background-color: navy;
-}
-.fg-navy {
-  color: navy;
-  border-color: navy;
-}
-.border-navy {
-  border-color: navy;
-}
-.hover-bg-navy:hover {
-  background-color: navy;
-  border-color: navy;
+.hover-bg-grey:hover {
+  background-color: #191919;
+  border-color: #191919;
   color: white;
 }
-.hover-fg-navy:hover {
-  color: navy;
-  border-color: navy;
-}
-.bg-lightyellow {
-  color: black;
-  border-color: lightyellow;
-  background-color: lightyellow;
-}
-.fg-lightyellow {
-  color: lightyellow;
-  border-color: lightyellow;
-}
-.border-lightyellow {
-  border-color: lightyellow;
-}
-.hover-bg-lightyellow:hover {
-  background-color: lightyellow;
-  border-color: lightyellow;
-  color: black;
-}
-.hover-fg-lightyellow:hover {
-  color: lightyellow;
-  border-color: lightyellow;
-}
-.bg-yellow {
-  color: black;
-  border-color: yellow;
-  background-color: yellow;
-}
-.fg-yellow {
-  color: yellow;
-  border-color: yellow;
-}
-.border-yellow {
-  border-color: yellow;
-}
-.hover-bg-yellow:hover {
-  background-color: yellow;
-  border-color: yellow;
-  color: black;
-}
-.hover-fg-yellow:hover {
-  color: yellow;
-  border-color: yellow;
-}
-.bg-lightgray {
-  color: black;
-  border-color: lightgray;
-  background-color: lightgray;
-}
-.fg-lightgray {
-  color: lightgray;
-  border-color: lightgray;
-}
-.border-lightgray {
-  border-color: lightgray;
-}
-.hover-bg-lightgray:hover {
-  background-color: lightgray;
-  border-color: lightgray;
-  color: black;
-}
-.hover-fg-lightgray:hover {
-  color: lightgray;
-  border-color: lightgray;
-}
-.bg-turquoise {
-  color: black;
-  border-color: turquoise;
-  background-color: turquoise;
-}
-.fg-turquoise {
-  color: turquoise;
-  border-color: turquoise;
-}
-.border-turquoise {
-  border-color: turquoise;
-}
-.hover-bg-turquoise:hover {
-  background-color: turquoise;
-  border-color: turquoise;
-  color: black;
-}
-.hover-fg-turquoise:hover {
-  color: turquoise;
-  border-color: turquoise;
-}
-.bg-magenta {
-  color: white;
-  border-color: magenta;
-  background-color: magenta;
-}
-.fg-magenta {
-  color: magenta;
-  border-color: magenta;
-}
-.border-magenta {
-  border-color: magenta;
-}
-.hover-bg-magenta:hover {
-  background-color: magenta;
-  border-color: magenta;
-  color: white;
-}
-.hover-fg-magenta:hover {
-  color: magenta;
-  border-color: magenta;
-}
-.bg-black {
-  color: white;
-  border-color: #000000;
-  background-color: #000000;
-}
-.fg-black {
-  color: #000000;
-  border-color: #000000;
-}
-.border-black {
-  border-color: #000000;
-}
-.hover-bg-black:hover {
-  background-color: #000000;
-  border-color: #000000;
-  color: white;
-}
-.hover-fg-black:hover {
-  color: #000000;
-  border-color: #000000;
+.hover-fg-grey:hover {
+  color: #191919;
+  border-color: #191919;
 }
 .bg-white {
   color: black;
-  border-color: #FFFFFF;
-  background-color: #FFFFFF;
+  border-color: #ffffff;
+  background-color: #ffffff;
 }
 .fg-white {
-  color: #FFFFFF;
-  border-color: #FFFFFF;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 .border-white {
-  border-color: #FFFFFF;
+  border-color: #ffffff;
 }
 .hover-bg-white:hover {
-  background-color: #FFFFFF;
-  border-color: #FFFFFF;
+  background-color: #ffffff;
+  border-color: #ffffff;
   color: black;
 }
 .hover-fg-white:hover {
-  color: #FFFFFF;
-  border-color: #FFFFFF;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 @media (max-width: 576px) {
   .m-1 {
@@ -4003,9 +3856,11 @@ a {
 .dd-breadcrumb > .ap-breadcrumb__separator > svg {
   height: 1em;
 }
+#main-menu-container {
+  background-color: #191919;
+}
 .menu {
-  background-color: black;
-  font-size: 30px;
+  font-size: 16px;
   color: white;
 }
 .menu ul {
@@ -4017,19 +3872,8 @@ a {
 .menu ul li a {
   text-decoration: none;
 }
-.dd-container {
-  position: relative;
-}
-.dd-container .dd-image {
-  width: 60%;
-}
-.dd-container .dd-header-page {
-  position: absolute;
-  top: 200px;
-  right: 30%;
-}
-.dd-container .dd-header-page span {
-  color: white;
+.dd-image {
+  width: 100%;
 }
 /**
  * Structural elements

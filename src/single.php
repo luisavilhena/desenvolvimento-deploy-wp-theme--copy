@@ -5,7 +5,7 @@ get_header(); ?>
 <?php while (have_posts()) : the_post(); ?>
 	<?php the_title(); ?>
 
-  <div>
+  <div class="website-side-padding website-max-width">
     <?php the_content(); ?>
   </div>
 <?php endwhile; ?>
