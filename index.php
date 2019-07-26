@@ -27,7 +27,6 @@ get_header(); ?>
       <?php
     })
     ?>
-    <button>teste</button>
   <?php endwhile; ?>
 </main>
 
