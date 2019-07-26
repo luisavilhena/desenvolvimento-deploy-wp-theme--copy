@@ -23,7 +23,7 @@
 	<?php require('partials/social-meta-tags.php'); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body class="bg-grey" <?php body_class(); ?>>
 	<!-- <div id="mobile-menu-overlay"></div> -->
 	<header id="main-header">
     <div class="bg-grey">
