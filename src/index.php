@@ -28,6 +28,7 @@ get_header(); ?>
     })
     ?>
   <?php endwhile; ?>
+  <button id="button">teste</button>
 </main>
 
 <?php
