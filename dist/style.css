@@ -3859,6 +3859,9 @@ a {
 #main-menu-container {
   background-color: #191919;
 }
+nav {
+  padding-top: 100px;
+}
 .menu {
   font-size: 16px;
   color: white;
@@ -3871,6 +3874,27 @@ a {
 }
 .menu ul li a {
   text-decoration: none;
+}
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: none;
+}
+form input {
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+}
+form button {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border-style: none;
 }
 .dd-image {
   width: 100%;

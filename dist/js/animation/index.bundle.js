@@ -1,1 +1,0 @@
-!function(){"use strict";console.log("Animation script"),console.log("teste");jQuery(window),$(".dd-image");$("#button").click(function(){console.log("foi")})}();
