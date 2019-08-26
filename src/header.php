@@ -47,19 +47,19 @@
   	          'menu_id'        => 'main-menu-cta',
   	        ));
   	      ?>
-          <form
-            action=""
-            method="get">
-            <input
-              placeholder="Busque por palavra"
-              name="s"
-              value="<?php echo get_search_query(); ?>">
-            <button
-              type="submit">
-              <?php require('resources/icon/magnifier.svg'); ?>
-            </button>          
-          </form>
   	    </nav>
+        <form
+          action=""
+          method="get">
+          <input
+            placeholder="Busque por palavra"
+            name="s"
+            value="<?php echo get_search_query(); ?>">
+          <button
+            type="submit">
+            <?php require('resources/icon/magnifier.svg'); ?>
+          </button>          
+        </form>
   	  </div>
     </div>
 	</header>
