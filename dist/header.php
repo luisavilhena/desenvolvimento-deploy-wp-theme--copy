@@ -23,11 +23,11 @@
 	<?php require('partials/social-meta-tags.php'); ?>
 </head>
 
-<body class="bg-grey" <?php body_class(); ?>>
+<body class="" <?php body_class(); ?>>
 	<!-- <div id="mobile-menu-overlay"></div> -->
-	<header id="main-header">
-    <div class="bg-grey">
-  	  <div class="website-side-padding website-max-width">
+	<header id="main-header" class="website-side-padding website-max-width">
+    <div class="bg-white">
+  	  <div class="dd-width-100">
 
   	    <button id="mobile-menu-trigger">
   	      <span></span>
@@ -40,11 +40,6 @@
   	        wp_nav_menu(array(
   	          'theme_location' => 'main-menu',
   	          'menu_id'        => 'main-menu',
-  	        ));
-
-  	        wp_nav_menu(array(
-  	          'theme_location' => 'main-menu-cta',
-  	          'menu_id'        => 'main-menu-cta',
   	        ));
   	      ?>
           <form

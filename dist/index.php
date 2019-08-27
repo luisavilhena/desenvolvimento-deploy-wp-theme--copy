@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-<main class="below-header-container bg-grey">
+<main class="below-header-container bg-white">
     <?php
     dd_component__page_section(array(
       'background-color' => 'magenta',
